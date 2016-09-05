@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Main Page</title>
+</head>
+
+<body>
+    <!--<form action="blinky.html" method="GET"><input type="radio" name="state" value="on" onclick="this.form.submit()"> On<br><input type="radio" name="state" value="off" checked onclick="this.form.submit()"> Off</form>-->
+    <form action="index.html" method="get">
+        <br><font size="10">3 axis robotic arm</font><br><br><br>
+
+        <font size="5">Join 1</font><br>
+        Number of phase:  <input type="number" name="pha1" value="0" size="20" maxlength="10" /><br>
+        Step delay:   <input type="number" name="delay1" value="10" size="20" maxlength="10" /><br>
+        Direction:   <input type="radio" name="dir1" checked value="l" /> LEFT     <input type="radio" name="dir1" value="r" /> RIGHT 
+        <br><br>
+        <font size="5">Join 2</font><br>
+        Number of phase:  <input type="number" name="pha2" value="0" size="20" maxlength="10" /><br>
+        Step delay:   <input type="number" name="delay2" value="10" size="20" maxlength="10" /><br>
+        Direction:   <input type="radio" name="dir2" checked value="l" /> LEFT     <input type="radio" name="dir2" value="r" /> RIGHT
+        <br><br>
+        <font size="5">Join 3</font><br>
+        Number of phase:  <input type="number" name="pha3" value="0" size="20" maxlength="10" /><br>
+        Step delay:   <input type="number" name="delay3" value="10" size="20" maxlength="10" /><br>
+        Direction:   <input type="radio" name="dir3" checked value="l" /> LEFT     <input type="radio" name="dir3" value="r" /> RIGHT
+        <br><br>
+        <input type="submit" value="RUN"/>
+    </form>
+    <form action="series.html" method="get">
+        <br><br><font size="5">Series of Moves</font><br>
+        Add moves per line: a(0,10,l)&b(500,10,l)&c(200,10,r)&w(10)
+        <br>
+        <textarea name="series" rows="20" cols="100"></textarea>
+        <br />
+        <input type="submit" value="RUN" />
+    </form>
+</body>
+</html>

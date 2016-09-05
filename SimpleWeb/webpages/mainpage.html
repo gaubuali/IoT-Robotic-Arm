@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Main Page</title>
+</head>
+
+<body>
+    <!--<form action="blinky.html" method="GET"><input type="radio" name="state" value="on" onclick="this.form.submit()"> On<br><input type="radio" name="state" value="off" checked onclick="this.form.submit()"> Off</form>-->
+    <form action="index.html" method="get">
+        <br><font size="10">Motor Control</font><br><br><br>
+
+        Number of phase:  <input type="number" name="pha" value="120" size="20" maxlength="10" />
+        <input type="radio" name="inf" value="on"/>RUN NON STOP    
+        <input type="radio" checked name="inf" value="off"/>RUN BY CONTROL
+        <br><br>
+        Step delay:   <input type="number" name="delay" value="10" size="20" maxlength="10"/>
+        <br><br>
+        Direction:   <input type="radio" name="dir" checked value="l"/> LEFT     <input type="radio" name="dir" value="r"/> RIGHT 
+        <br><br>
+        <input type="submit" value="RUN"/>
+    </form>
+</body>
+</html>
